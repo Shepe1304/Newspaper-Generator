@@ -1,0 +1,94 @@
+.main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.newspaper {
+  height: 630px;
+  aspect-ratio: 265/280;
+  text-align: justify;
+  font-size: 12px;
+  background-color: rgb(212, 212, 212);
+  border: 1px solid black;
+}
+
+.newspaper div {
+  font-family: "EB Garamond", serif;
+}
+
+.newspaper .newspaper--name {
+  font-family: "Rye", serif;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.newspaper .newspaper--slogan {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -3px;
+  padding-bottom: 3px;
+}
+
+.newspaper--second_row, .newspaper--date {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.newspaper--articles {
+  display: flex;
+  flex-direction: row;
+  /* gap: 20px; */
+}
+
+.newspaper--article_type1,
+.newspaper--article_type2,
+.newspaper--article_type3 {
+  height: 100%;
+  width: 33%;
+}
+
+.paragraph {
+  padding: 0 5px;
+}
+
+.newspaper--article_type2_paragraphs {
+  display: flex;
+  /* gap: 10px; */
+}
+
+.newspaper--ads {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.newspaper--article {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+/* 
+.newspaper div {
+  border: 1px solid black;
+} */

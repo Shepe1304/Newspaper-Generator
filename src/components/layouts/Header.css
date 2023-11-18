@@ -1,0 +1,27 @@
+.header {
+  width: 100vw;
+  background-color: #e0c9a6;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 10vh;
+  gap: 20px;
+  border-bottom: 1px solid rgb(99, 99, 99);
+}
+
+.header--icon {
+  height: 80px;
+}
+
+.header--texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header--website_name {
+  font-family: "Vast Shadow", serif;
+  /* font-family: 'Rye', serif; */
+  font-size: 40px;
+}
