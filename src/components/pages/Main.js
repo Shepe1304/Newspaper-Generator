@@ -22,6 +22,8 @@ const Main = () => {
   const [n18, setN18] = useState(0);
   const [n19, setN19] = useState(0);
 
+  const imgbg = "white";
+
   const Generate = () => {
     let tmp1 = Math.floor(Math.random() * 21) + 50;
     let tmp2 = 85 - tmp1;
@@ -124,7 +126,7 @@ const Main = () => {
               TITLE
             </div>
             <div
-              className="newspaper--article_type1_img"
+              className="img_box newspaper--article_type1_img"
               style={{ height: `${n3}%` }}
             >
               {" "}
@@ -140,7 +142,7 @@ const Main = () => {
             </div>{" "}
             {/* 35-55 */}
             <div
-              className="newspaper--article_type1_img"
+              className="img_box newspaper--article_type1_img"
               style={{ height: `${n5}%` }}
             >
               <img src="" alt="" className="newspaper--article_type1_img2" />
@@ -158,7 +160,7 @@ const Main = () => {
               TITLE 2
             </div>
             <div
-              className="newspaper--article_type2_img"
+              className="img_box newspaper--article_type2_img"
               style={{ height: `${n6}%` }}
             >
               {" "}
@@ -212,7 +214,7 @@ const Main = () => {
                 TITLE 3
               </div>
               <div
-                className="newspaper--article_type3_img"
+                className="img_box newspaper--article_type3_img"
                 style={{ height: `${n10}%` }}
               >
                 {" "}
@@ -253,7 +255,10 @@ const Main = () => {
           </div>
         </div>
         <div className="newspaper--ads" style={{ height: `${n2}%` }}>
-          <div className="newspaper--ad" style={{ width: `${n17}%` }}>
+          <div
+            className="newspaper--ad"
+            style={{ width: `${n17}%`, borderRight: "1px solid black" }}
+          >
             <div
               className="title newspaper--ad_title"
               style={{ height: "15%" }}
@@ -261,7 +266,10 @@ const Main = () => {
             >
               Ad 1
             </div>
-            <div className="newspaper--ad_img" style={{ height: "40%" }}>
+            <div
+              className="img_box newspaper--ad_img"
+              style={{ height: "40%" }}
+            >
               <img src="" alt="" />
             </div>
             <div
@@ -272,7 +280,14 @@ const Main = () => {
               Ad paragraph
             </div>
           </div>
-          <div className="newspaper--ad" style={{ width: `${n18}%` }}>
+          <div
+            className="newspaper--ad"
+            style={{
+              width: `${n18}%`,
+              borderLeft: "1px solid black",
+              borderRight: "1px solid black",
+            }}
+          >
             <div
               className="title newspaper--ad_title"
               style={{ height: "15%" }}
@@ -280,7 +295,10 @@ const Main = () => {
             >
               Ad 2
             </div>
-            <div className="newspaper--ad_img" style={{ height: "45%" }}>
+            <div
+              className="img_box newspaper--ad_img"
+              style={{ height: "45%" }}
+            >
               <img src="" alt="" />
             </div>
             <div
@@ -291,7 +309,13 @@ const Main = () => {
               Ad paragraph
             </div>
           </div>
-          <div className="newspaper--ad" style={{ width: `${n19}%` }}>
+          <div
+            className="newspaper--ad"
+            style={{
+              width: `${n19}%`,
+              borderLeft: "1px solid black",
+            }}
+          >
             <div
               className="title newspaper--ad_title"
               style={{ height: "15%" }}
@@ -299,7 +323,10 @@ const Main = () => {
             >
               Ad 3
             </div>
-            <div className="newspaper--ad_img" style={{ height: "40%" }}>
+            <div
+              className="img_box newspaper--ad_img"
+              style={{ height: "40%" }}
+            >
               <img src="" alt="" />
             </div>
             <div

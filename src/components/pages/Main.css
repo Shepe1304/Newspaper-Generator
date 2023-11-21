@@ -92,3 +92,12 @@
 .newspaper div {
   border: 1px solid black;
 } */
+
+.img_box {
+  cursor: pointer;
+  background-color: white;
+}
+
+.img_box:hover {
+  background-color: rgb(157, 157, 157);
+}
