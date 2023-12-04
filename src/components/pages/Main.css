@@ -47,7 +47,8 @@
   padding-bottom: 3px;
 }
 
-.newspaper--second_row, .newspaper--date {
+.newspaper--second_row,
+.newspaper--date {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -100,4 +101,8 @@
 
 .img_box:hover {
   background-color: rgb(157, 157, 157);
+}
+
+button, .icon {
+  cursor: pointer;
 }
