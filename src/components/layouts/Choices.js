@@ -2,10 +2,11 @@ import React from "react";
 import "./Choices.css";
 import xIcon from "../assets/img/circle-xmark-regular.svg";
 
-const Choices = () => {
+const Choices = (props) => {
+
   return (
     <div className="choices">
-      <div className="icon choices--icon">
+      <div className="icon choices--icon" onClick={props.HandleExitClicked}>
         <img src={xIcon} alt="" />
       </div>
       <div className="choices--headline">SOME CHOICES FOR YOU</div>

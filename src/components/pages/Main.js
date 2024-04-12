@@ -89,14 +89,19 @@ const Main = () => {
       <div className="newspaper">
         <div
           className="newspaper--first_row"
-          style={{ height: "12%", border: "1px solid black" }}
+          style={{
+            height: "12%",
+            border: "1px solid black",
+            display: "flex",
+            flexDirection: "column",
+          }}
         >
-          <div className="newspaper--name" contentEditable>
+          <textarea className="newspaper--name" contentEditable>
             SHEPE PRESS
-          </div>
-          <div className="newspaper--slogan" contentEditable>
+          </textarea>
+          <textarea className="newspaper--slogan" contentEditable>
             The most honest newspaper in all of Sheepland
-          </div>
+          </textarea>
         </div>
         <div
           className="newspaper--second_row"
@@ -106,10 +111,16 @@ const Main = () => {
             <div contentEditable>12th</div>
             <div contentEditable>Aliozas Month</div>
             <div contentEditable>199 FE</div>
+            {/* <textarea contentEditable>12th</textarea>
+            <textarea contentEditable>Aliozas Month</textarea>
+            <textarea contentEditable>199 FE</textarea> */}
           </div>
           <div className="newspaper--volume_number" contentEditable>
             Vol. 158
           </div>
+          {/* <textarea className="newspaper--volume_number" contentEditable>
+            Vol. 158
+          </textarea> */}
         </div>
         <div className="newspaper--articles" style={{ height: `${n1}%` }}>
           {" "}
@@ -118,13 +129,13 @@ const Main = () => {
             className="newspaper--article_type1 newspaper--article"
             style={{ width: `${n14}%` }}
           >
-            <div
+            <textarea
               className="title newspaper--article_type1_title"
-              style={{ height: "5%" }}
+              style={{ height: "5%", width: "100%" }}
               contentEditable
             >
               TITLE
-            </div>
+            </textarea>
             <div
               className="img_box newspaper--article_type1_img"
               style={{ height: `${n3}%` }}
@@ -133,13 +144,13 @@ const Main = () => {
               {/* 20-30 */}
               <img src="" alt="" className="newspaper--article_type1_img1" />
             </div>
-            <div
+            <textarea
               className="paragraph newspaper--article_type1_paragraph"
-              style={{ height: `${n4}%` }}
+              style={{ height: `${n4}%`, width: "100%" }}
               contentEditable
             >
               Paragraph
-            </div>{" "}
+            </textarea>{" "}
             {/* 35-55 */}
             <div
               className="img_box newspaper--article_type1_img"
@@ -152,13 +163,13 @@ const Main = () => {
             className="newspaper--article_type2 newspaper--article"
             style={{ width: `${n15}%` }}
           >
-            <div
+            <textarea
               className="title newspaper--article_type2_title"
-              style={{ height: "10%", fontSize: "25px" }}
+              style={{ height: "10%", fontSize: "25px", width: "100%" }}
               contentEditable
             >
               TITLE 2
-            </div>
+            </textarea>
             <div
               className="img_box newspaper--article_type2_img"
               style={{ height: `${n6}%` }}
@@ -167,33 +178,33 @@ const Main = () => {
               {/* 30-40 */}
               <img src="" alt="" className="newspaper--article_type2_img1" />
             </div>
-            <div
+            <textarea
               className="subtitle newspaper--article_type2_subtitle"
-              style={{ height: "8%" }}
+              style={{ height: "8%", width: "100%" }}
               contentEditable
             >
               SUBTITLE
-            </div>
+            </textarea>
             <div
               className="newspaper--article_type2_paragraphs"
               style={{ height: `${n7}%` }}
             >
               {" "}
               {/* 42-52 */}
-              <div
+              <textarea
                 className="paragraph newspaper--article_type2_paragraph1"
-                style={{ width: "50%" }}
+                style={{ width: "50%", width: "100%" }}
                 contentEditable
               >
                 Paragraph
-              </div>
-              <div
+              </textarea>
+              <textarea
                 className="paragraph newspaper--article_type2_paragraph2"
-                style={{ width: "50%" }}
+                style={{ width: "50%", width: "100%" }}
                 contentEditable
               >
                 Paragraph
-              </div>
+              </textarea>
             </div>
           </div>
           <div
@@ -206,13 +217,13 @@ const Main = () => {
             >
               {" "}
               {/* 20-80 */}
-              <div
+              <textarea
                 className="title newspaper--article_type3_title"
-                style={{ height: "12%" }}
+                style={{ height: "12%", width: "100%" }}
                 contentEditable
               >
                 TITLE 3
-              </div>
+              </textarea>
               <div
                 className="img_box newspaper--article_type3_img"
                 style={{ height: `${n10}%` }}
@@ -221,13 +232,13 @@ const Main = () => {
                 {/* 25-35 */}
                 <img src="" alt="" className="newspaper--article_type3_img1" />
               </div>
-              <div
+              <textarea
                 className="paragraph newspaper--article_type3_paragraph"
-                style={{ height: `${n11}%` }}
+                style={{ height: `${n11}%`, width: "100%" }}
                 contentEditable
               >
                 Paragraph
-              </div>{" "}
+              </textarea>{" "}
               {/* 55-65 */}
             </div>
             <div
@@ -236,21 +247,21 @@ const Main = () => {
             >
               {" "}
               {/* 20-80 */}
-              <div
+              <textarea
                 className="title newspaper--article_type3_title"
                 // style={{ height: `${n12}%` }}
-                style={{ height: "10%" }}
+                style={{ height: "10%", width: "100%" }}
                 contentEditable
               >
                 TITLE 4
-              </div>
-              <div
+              </textarea>
+              <textarea
                 className="paragraph newspaper--article_type3_paragraph"
-                style={{ height: "90%" }}
+                style={{ height: "90%", width: "100%" }}
                 contentEditable
               >
                 Paragraph
-              </div>
+              </textarea>
             </div>
           </div>
         </div>
@@ -259,26 +270,26 @@ const Main = () => {
             className="newspaper--ad"
             style={{ width: `${n17}%`, borderRight: "1px solid black" }}
           >
-            <div
+            <textarea
               className="title newspaper--ad_title"
-              style={{ height: "15%" }}
+              style={{ height: "15%", width: "100%" }}
               contentEditable
             >
               Ad 1
-            </div>
+            </textarea>
             <div
               className="img_box newspaper--ad_img"
               style={{ height: "40%" }}
             >
               <img src="" alt="" />
             </div>
-            <div
+            <textarea
               className="paragraph newspaper--ad_paragraph"
-              style={{ height: "45%" }}
+              style={{ height: "45%", width: "100%" }}
               contentEditable
             >
               Ad paragraph
-            </div>
+            </textarea>
           </div>
           <div
             className="newspaper--ad"
@@ -288,26 +299,26 @@ const Main = () => {
               borderRight: "1px solid black",
             }}
           >
-            <div
+            <textarea
               className="title newspaper--ad_title"
-              style={{ height: "15%" }}
+              style={{ height: "15%", width: "100%" }}
               contentEditable
             >
               Ad 2
-            </div>
+            </textarea>
             <div
               className="img_box newspaper--ad_img"
               style={{ height: "45%" }}
             >
               <img src="" alt="" />
             </div>
-            <div
+            <textarea
               className="paragraph newspaper--ad_paragraph"
-              style={{ height: "40%" }}
+              style={{ height: "40%", width: "100%" }}
               contentEditable
             >
               Ad paragraph
-            </div>
+            </textarea>
           </div>
           <div
             className="newspaper--ad"
@@ -316,26 +327,26 @@ const Main = () => {
               borderLeft: "1px solid black",
             }}
           >
-            <div
+            <textarea
               className="title newspaper--ad_title"
-              style={{ height: "15%" }}
+              style={{ height: "15%", width: "100%" }}
               contentEditable
             >
               Ad 3
-            </div>
+            </textarea>
             <div
               className="img_box newspaper--ad_img"
               style={{ height: "40%" }}
             >
               <img src="" alt="" />
             </div>
-            <div
+            <textarea
               className="paragraph newspaper--ad_paragraph"
-              style={{ height: "45%" }}
+              style={{ height: "45%", width: "100%" }}
               contentEditable
             >
               Ad paragraph
-            </div>
+            </textarea>
           </div>
         </div>{" "}
         {/* 0-30 */}

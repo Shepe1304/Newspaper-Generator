@@ -1,5 +1,5 @@
 .main {
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,6 +70,9 @@
 
 .paragraph {
   padding: 0 5px;
+  word-wrap: break-word;
+  display: block;
+  /* text-wrap: wrap; */
 }
 
 .newspaper--article_type2_paragraphs {
@@ -103,6 +106,11 @@
   background-color: rgb(157, 157, 157);
 }
 
-button, .icon {
+button,
+.icon {
   cursor: pointer;
+}
+
+.newspaper textarea {
+  resize: none;
 }
