@@ -1,5 +1,5 @@
 .main {
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,8 @@
   padding-bottom: 3px;
 }
 
-.newspaper--second_row, .newspaper--date {
+.newspaper--second_row,
+.newspaper--date {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -69,6 +70,9 @@
 
 .paragraph {
   padding: 0 5px;
+  word-wrap: break-word;
+  display: block;
+  /* text-wrap: wrap; */
 }
 
 .newspaper--article_type2_paragraphs {
@@ -92,3 +96,21 @@
 .newspaper div {
   border: 1px solid black;
 } */
+
+.img_box {
+  cursor: pointer;
+  background-color: white;
+}
+
+.img_box:hover {
+  background-color: rgb(157, 157, 157);
+}
+
+button,
+.icon {
+  cursor: pointer;
+}
+
+.newspaper textarea {
+  resize: none;
+}
