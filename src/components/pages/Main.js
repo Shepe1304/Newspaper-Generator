@@ -86,14 +86,14 @@ const Main = () => {
 
   return (
     <div className="main">
-      <div className="newspaper">
+      <div className="newspaper" style={{ border: "2px solid black" }}>
         <div
           className="newspaper--first_row"
           style={{
             height: "12%",
-            border: "1px solid black",
             display: "flex",
             flexDirection: "column",
+            borderBottom: "1px solid black",
           }}
         >
           <textarea className="newspaper--name" contentEditable>
@@ -105,7 +105,7 @@ const Main = () => {
         </div>
         <div
           className="newspaper--second_row"
-          style={{ height: "3%", border: "1px solid black" }}
+          style={{ height: "3%", borderBottom: "1px solid black" }}
         >
           <div className="newspaper--date">
             <div contentEditable>12th</div>
@@ -266,10 +266,7 @@ const Main = () => {
           </div>
         </div>
         <div className="newspaper--ads" style={{ height: `${n2}%` }}>
-          <div
-            className="newspaper--ad"
-            style={{ width: `${n17}%`, borderRight: "1px solid black" }}
-          >
+          <div className="newspaper--ad" style={{ width: `${n17}%` }}>
             <textarea
               className="title newspaper--ad_title"
               style={{ height: "15%", width: "100%" }}
@@ -295,8 +292,6 @@ const Main = () => {
             className="newspaper--ad"
             style={{
               width: `${n18}%`,
-              borderLeft: "1px solid black",
-              borderRight: "1px solid black",
             }}
           >
             <textarea
@@ -324,7 +319,6 @@ const Main = () => {
             className="newspaper--ad"
             style={{
               width: `${n19}%`,
-              borderLeft: "1px solid black",
             }}
           >
             <textarea
