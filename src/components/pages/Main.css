@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 
 .title {
@@ -17,6 +17,7 @@
   font-size: 12px;
   font-weight: bold;
   text-align: center;
+  padding: 5px;
 }
 
 .newspaper {
@@ -25,7 +26,6 @@
   text-align: justify;
   font-size: 12px;
   background-color: rgb(212, 212, 212);
-  border: 1px solid black;
 }
 
 .newspaper div {
@@ -66,6 +66,7 @@
 .newspaper--article_type3 {
   height: 100%;
   width: 33%;
+  /* padding-bottom: 10px; */
 }
 
 .paragraph {
@@ -83,13 +84,11 @@
 .newspaper--ads {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
-  padding: 5px;
+  padding-bottom: 3px;
 }
 
 .newspaper--article {
-  padding: 5px;
-  border: 1px solid black;
+  /* padding: 5px; */
 }
 
 /* 
@@ -113,4 +112,6 @@ button,
 
 .newspaper textarea {
   resize: none;
+  background-color: rgb(212, 212, 212);
+  border: none;
 }
