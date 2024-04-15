@@ -14,10 +14,10 @@
 }
 
 .subtitle {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
-  padding: 5px;
+  padding-top: 10px;  
 }
 
 .newspaper {
@@ -70,14 +70,16 @@
 }
 
 .paragraph {
-  padding: 0 5px;
+  padding: 5px;
   word-wrap: break-word;
   display: block;
+  /* margin-bottom: 10px; */
   /* text-wrap: wrap; */
 }
 
 .newspaper--article_type2_paragraphs {
   display: flex;
+  padding: 2px 8px 8px 8px;
   /* gap: 10px; */
 }
 
@@ -114,4 +116,5 @@ button,
   resize: none;
   background-color: rgb(212, 212, 212);
   border: none;
+  overflow: hidden;
 }

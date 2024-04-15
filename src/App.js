@@ -5,7 +5,7 @@ import Header from "./components/layouts/Header";
 import Main from "./components/pages/Main";
 
 function App() {
-  const [showChoices, setShowChoices] = useState(true);
+  const [showChoices, setShowChoices] = useState(false);
 
   const HandleExitClicked = () => {
     setShowChoices(!showChoices)
