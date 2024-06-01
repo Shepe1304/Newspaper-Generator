@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Main.css";
+import Choices from "../layouts/Choices";
 
 const Main = () => {
   const [n1, setN1] = useState(0);
@@ -90,8 +91,14 @@ const Main = () => {
     setN19(tmp2);
   };
 
+  const [showChoices, setShowChoices] = useState(false);
+  const HandleExitClicked = () => {
+    setShowChoices(!showChoices)
+  };
+
   return (
     <div className="main">
+      {showChoices ? <Choices HandleExitClicked={HandleExitClicked}/> : null}
       {firstGenerate ? (
         <div className="newspaper" style={{ border: "2px solid black" }}>
           <div
@@ -143,6 +150,7 @@ const Main = () => {
               <div
                 className="img_box newspaper--article_type1_img"
                 style={{ height: `${n3}%` }}
+                onClick={HandleExitClicked}
               >
                 {" "}
                 {/* 20-30 */}
@@ -158,6 +166,7 @@ const Main = () => {
               <div
                 className="img_box newspaper--article_type1_img"
                 style={{ height: `${n5}%` }}
+                onClick={HandleExitClicked}
               >
                 <img src="" alt="" className="newspaper--article_type1_img2" />
               </div>
@@ -175,6 +184,7 @@ const Main = () => {
               <div
                 className="img_box newspaper--article_type2_img"
                 style={{ height: `${n6}%` }}
+                onClick={HandleExitClicked}
               >
                 {" "}
                 {/* 30-40 */}
@@ -225,6 +235,7 @@ const Main = () => {
                 <div
                   className="img_box newspaper--article_type3_img"
                   style={{ height: `${n10}%` }}
+                  onClick={HandleExitClicked}
                 >
                   {" "}
                   {/* 25-35 */}
@@ -282,6 +293,7 @@ const Main = () => {
               <div
                 className="img_box newspaper--ad_img"
                 style={{ height: "40%" }}
+                onClick={HandleExitClicked}
               >
                 <img src="" alt="" />
               </div>
@@ -312,6 +324,7 @@ const Main = () => {
               <div
                 className="img_box newspaper--ad_img"
                 style={{ height: "45%" }}
+                onClick={HandleExitClicked}
               >
                 <img src="" alt="" />
               </div>
@@ -341,6 +354,7 @@ const Main = () => {
               <div
                 className="img_box newspaper--ad_img"
                 style={{ height: "40%" }}
+                onClick={HandleExitClicked}
               >
                 <img src="" alt="" />
               </div>
@@ -355,8 +369,18 @@ const Main = () => {
           {/* 0-30 */}
         </div>
       ) : (
-        <div className="newspaper" style={{ border: "2px solid black", display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <div style={{fontWeight: "bold", fontSize: "20px"}}>CLICK BELOW BUTTON TO GENERATE A TEMPLATE</div>
+        <div
+          className="newspaper"
+          style={{
+            border: "2px solid black",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div style={{ fontWeight: "bold", fontSize: "20px" }}>
+            CLICK BELOW BUTTON TO GENERATE A TEMPLATE
+          </div>
         </div>
       )}
       <button onClick={Generate}>GENERATE</button>
